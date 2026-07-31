@@ -1,0 +1,31 @@
+###
+# Descrição: Adicionar um novo contato.
+# Resposta: Retornar o contato criado com um status 201.
+POST http://localhost:3000/contatos
+Content-type: application/json
+
+{
+  "nome": "Jo Silva",
+  "telefone": "+55 11 98765-4321"
+}
+###
+# Descrição: Listar todos os contatos.
+# Resposta: Retornar uma lista de contatos com status 200.
+GET http://localhost:3000/contatos
+###
+# Descrição: Atualizar um contato existente.
+# Parâmetro: id (identificador único do contato a ser excluído)
+# Resposta:Retornar o contato atualizado com um status 200.
+PATCH http://localhost:3000/contatos/44309738-13e3-4971-9b11-82577ccdf4be
+Content-type: application/json
+
+{
+  "nome": "João Santos",
+  "telefone": "+55 11 91234-5678"
+}
+###
+# Descrição: Excluir um contato existente.
+# Parâmetro: id (identificador único do contato a ser excluído)
+# Resposta: Retornar uma mensagem de sucesso com status 204.
+DELETE http://localhost:3000/contatos/44309738-13e3-4971-9b11-82577ccdf4be
+###

@@ -1,0 +1,31 @@
+{
+  "compilerOptions": {
+    /* Language and Environment */
+    "target": "ES2020",                      // Output modern JS
+    "lib": ["ES2020", "DOM"],                // Include browser + ES2020 APIs
+    "module": "ESNext",                      // Use modern modules
+    "moduleResolution": "Node",              // Resolve like Node.js
+    "esModuleInterop": true,                 // Enable default import interop
+    "allowSyntheticDefaultImports": true,    // Allow default imports from CJS
+    "resolveJsonModule": true,               // Allow import of .json files
+
+    /* Type Checking */
+    "strict": true,                          // Enable all strict type checks
+    "noImplicitAny": true,                   // Disallow implicit 'any'
+    "strictNullChecks": true,                // Enable null/undefined checks
+    "noUnusedLocals": true,                  // Error on unused locals
+    "noUnusedParameters": true,              // Error on unused parameters
+    "noFallthroughCasesInSwitch": true,      // Error on fallthrough in switch
+    "forceConsistentCasingInFileNames": true,// Disallow inconsistent imports
+
+    /* Output */
+    "outDir": "./dist",                      // Compiled JS goes here
+    "skipLibCheck": true,                    // Skip checking node_modules types
+
+    /* Project Options */
+    "baseUrl": "./",                         // Base path for module resolution
+    // "allowImportingTsExtensions": true
+  },
+  "include": ["src/**/*"],
+  "exclude": ["node_modules", "dist"]
+}
