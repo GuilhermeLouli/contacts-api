@@ -5,7 +5,7 @@ POST http://localhost:3000/contatos
 Content-type: application/json
 
 {
-  "nome": "Jo Silva",
+  "nome": "João Silva",
   "telefone": "+55 11 98765-4321"
 }
 ###
